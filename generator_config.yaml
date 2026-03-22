@@ -1,0 +1,9 @@
+# config variables for generator.py
+num_interfaces: 5 #how many virtual interfaces to create and use
+interface_base: "eth"
+target_base: "http://192.168.4.85"
+starting_ip:  '10.0.1.150' #use a valid IP range for your network
+cidr: '24'  #only works with CIDR of 24 for now
+page_list: ['/', '/twiki', '/phpMyAdmin', '/mutillidae', '/dav'] #these get appended to target_base
+user_agent_string_file: 'user_agent_strings.txt'
+logging_level: 'INFO'
